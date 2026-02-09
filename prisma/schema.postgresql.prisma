@@ -1,0 +1,192 @@
+// Production Prisma Schema - PostgreSQL
+// Copy this to schema.prisma when deploying to production
+// Or use: cp prisma/schema.postgresql.prisma prisma/schema.prisma
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+model Admin {
+  id        Int      @id @default(autoincrement())
+  username  String   @unique
+  password  String
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+  posts     Post[]
+}
+
+model Post {
+  id                 Int         @id @default(autoincrement())
+  title              String
+  slug               String      @unique
+  summary            String
+  content            String // Rich text content (HTML)
+  topic              String // Category/topic
+  coverImageUrl      String? // Image for blog listing / home card
+  publishedAt        DateTime    @default(now())
+  scheduledPublishAt DateTime? // Scheduled publish date/time (null = publish immediately)
+  updatedAt          DateTime    @updatedAt
+  published          Boolean     @default(true)
+  views              Int         @default(0)
+  likes              Int         @default(0)
+  adminId            Int
+  admin              Admin       @relation(fields: [adminId], references: [id])
+  images             PostImage[]
+  comments           Comment[]
+  likesData          PostLike[]
+
+  @@index([slug])
+  @@index([published])
+  @@index([topic])
+  @@index([scheduledPublishAt])
+}
+
+model PostImage {
+  id        Int      @id @default(autoincrement())
+  postId    Int
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  url       String
+  alt       String?
+  order     Int      @default(0)
+  size      String   @default("large") // "small", "medium", "large"
+  createdAt DateTime @default(now())
+
+  @@index([postId])
+}
+
+model Comment {
+  id        Int      @id @default(autoincrement())
+  postId    Int
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  author    String
+  email     String?
+  content   String
+  approved  Boolean  @default(true)
+  createdAt DateTime @default(now())
+
+  @@index([postId])
+  @@index([approved])
+}
+
+model PostLike {
+  id        Int      @id @default(autoincrement())
+  postId    Int
+  post      Post     @relation(fields: [postId], references: [id], onDelete: Cascade)
+  ipAddress String? // Track by IP to prevent duplicate likes
+  userAgent String?
+  createdAt DateTime @default(now())
+
+  @@unique([postId, ipAddress])
+  @@index([postId])
+}
+
+model PageVisit {
+  id                     Int      @id @default(autoincrement())
+  path                   String // Page path (e.g., "/", "/blog", "/work")
+  referer                String? // Referrer URL
+  refererCategory        String? // "search", "social", "direct", "external", "internal"
+  ipAddress              String? // Anonymized IP address (last octet removed)
+  userAgent              String? // Browser user agent
+  deviceType             String? // "mobile", "tablet", "desktop"
+  browser                String? // Browser name (Chrome, Firefox, etc.)
+  browserVersion         String? // Browser version
+  os                     String? // Operating system
+  country                String? // Country code (from IP geolocation)
+  city                   String? // City name (from IP geolocation)
+  sessionId              String? // Unique session identifier (cookie-based)
+  isBot                  Boolean  @default(false) // Whether this is a bot/crawler
+  loadTime               Int? // Page load time in milliseconds
+  firstContentfulPaint   Int? // FCP in milliseconds
+  largestContentfulPaint Int? // LCP in milliseconds
+  cumulativeLayoutShift  Float? // CLS score
+  firstInputDelay        Int? // FID in milliseconds
+  conversationId         String? // Link to chatbot conversation (for conversion tracking)
+  createdAt              DateTime @default(now())
+
+  @@index([path])
+  @@index([createdAt])
+  @@index([sessionId])
+  @@index([isBot])
+  @@index([conversationId])
+  @@index([deviceType])
+}
+
+model LoginAttempt {
+  id        Int      @id @default(autoincrement())
+  username  String // Username attempted (even if invalid)
+  ipAddress String // IP address of the attempt
+  userAgent String? // Browser user agent
+  success   Boolean // Whether login was successful
+  createdAt DateTime @default(now())
+
+  @@index([ipAddress])
+  @@index([username])
+  @@index([createdAt])
+  @@index([ipAddress, createdAt])
+}
+
+model ContactSubmission {
+  id             Int      @id @default(autoincrement())
+  firstName      String
+  lastName       String
+  email          String
+  message        String
+  ipAddress      String? // Anonymized IP
+  userAgent      String?
+  referer        String? // Where they came from
+  sessionId      String? // Link to session
+  conversationId String? // Link to chatbot conversation if applicable
+  isSpam         Boolean  @default(false)
+  status         String   @default("new") // "new", "read", "replied", "archived"
+  notes          String? // Admin notes
+  createdAt      DateTime @default(now())
+  updatedAt      DateTime @updatedAt
+
+  @@index([email])
+  @@index([status])
+  @@index([createdAt])
+  @@index([isSpam])
+}
+
+model Lead {
+  id                 Int      @id @default(autoincrement())
+  name               String
+  organisation       String
+  email              String?
+  phone              String?
+  conversationId     String? // Link to chatbot conversation
+  activityDurationMs Int? // Time spent before submitting
+  ipAddress          String? // Anonymized IP
+  sessionId          String? // Link to session
+  status             String   @default("new") // "new", "contacted", "qualified", "converted", "archived"
+  score              Int      @default(0) // Lead score
+  notes              String? // Admin notes
+  createdAt          DateTime @default(now())
+  updatedAt          DateTime @updatedAt
+
+  @@index([email])
+  @@index([phone])
+  @@index([status])
+  @@index([conversationId])
+  @@index([createdAt])
+}
+
+model AnswerFeedback {
+  id             Int      @id @default(autoincrement())
+  conversationId String? // Link to conversation
+  question       String // The question asked
+  answer         String // The answer given
+  helpful        Boolean // true = thumbs up, false = thumbs down
+  ipAddress      String? // Anonymized IP
+  sessionId      String? // Link to session
+  createdAt      DateTime @default(now())
+
+  @@index([conversationId])
+  @@index([helpful])
+  @@index([createdAt])
+}

@@ -1,0 +1,726 @@
+{
+  "all_questions": [
+    {
+      "id": "q_1769276721320_61ccx3b9k",
+      "question": "does he like mangoes",
+      "reply": "Sorry, I am unable to access this information. For any other questions, please reach out to contact@sakshammahajan.com.",
+      "timestamp": "2026-01-24T17:45:21.320Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769276832054_dxww16u7z",
+      "question": "how are you",
+      "reply": "I'm doing well, thank you! I'm here to help you learn about Saksham's experience at Pita Pit, his skills, education, and career goals. What would you like to know?",
+      "timestamp": "2026-01-24T17:47:12.054Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 0,
+        "is_general_conversation": true
+      }
+    },
+    {
+      "id": "q_1769276868465_53rcexdlh",
+      "question": "i see does he has experience in the same?",
+      "reply": "Could you please clarify what \"the same\" refers to? Once I understand what you're asking about, I can check Saksham's profile for relevant experience.",
+      "timestamp": "2026-01-24T17:47:48.465Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769276897093_qdyj2mxtf",
+      "question": "the thing we were talking about",
+      "reply": "I'm sorry, but I do not have enough information to understand what you are asking. Could you please clarify what you would like to know about Saksham? For example, are you interested in his skills, experience, or education?",
+      "timestamp": "2026-01-24T17:48:17.093Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769278638565_3tdtgbh64",
+      "question": "tell me more about his time in paris",
+      "reply": "Saksham studied at ESSEC Business School in Paris from September 2021 to June 2023, earning a MiM in Innovation, Entrepreneurship & Sustainability. During this time, he won the L’Oréal Digital Challenge for the APAC region and worked on consulting projects across a team of 3 people, SSP, and AIDHA. Interested in his education?",
+      "timestamp": "2026-01-24T18:17:18.565Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769294793676_dbt2tjav8",
+      "question": "does he like mangoes?",
+      "reply": "Sorry, I am unable to access this information. For any personal questions, please contact contact@sakshammahajan.com. However, I can share details on his experience in the food and beverage industry. Would you like to know more?",
+      "timestamp": "2026-01-24T22:46:33.676Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769294846575_bwxccnbok",
+      "question": "does he like mangoes?",
+      "reply": "Sorry, I am unable to access this information. For personal questions, please contact contact@sakshammahajan.com. However, I can share details on his experience in the Food & Beverage industry. Would you like to know more?",
+      "timestamp": "2026-01-24T22:47:26.575Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769294934639_fvm2cpv5z",
+      "question": "does he like cars?",
+      "reply": "Sorry, I am unable to access this information. Please contact contact@sakshammahajan.com for any personal questions. However, I can share information about his professional interests, such as consumer brands or emerging market GTM strategies. Would you like to know more?",
+      "timestamp": "2026-01-24T22:48:54.639Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769294973337_h99d0i4um",
+      "question": "does he like cars?",
+      "reply": "That information is not available. However, if you are interested in discussing his experience in business strategy, growth, and operations, I'd be happy to share more. Alternatively, you can reach out to him directly at contact@sakshammahajan.com.",
+      "timestamp": "2026-01-24T22:49:33.337Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769295272327_kmsvl4q1k",
+      "question": "how does he handle conflict?",
+      "reply": "Saksham addresses conflict by first understanding concerns through direct conversation, then using data to bring objectivity, and finally by collaboratively creating solutions. An example of this approach can be seen in how he managed resistance to new SOPs at Pita Pit. Interested in his leadership style?",
+      "timestamp": "2026-01-24T22:54:32.327Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769295292531_busl75gs5",
+      "question": "yes",
+      "reply": "How can I help you learn more about Saksham's background and experience? Are you interested in his skills, experience, or perhaps his career goals?",
+      "timestamp": "2026-01-24T22:54:52.531Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 4
+      }
+    },
+    {
+      "id": "q_1769295454787_8a5e7eul4",
+      "question": "hi",
+      "reply": "Hello! I'm Saksham.AI, here to help you learn about Saksham's professional background, experience, and career interests. What would you like to know?",
+      "timestamp": "2026-01-24T22:57:34.787Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 0,
+        "is_general_conversation": true
+      }
+    },
+    {
+      "id": "q_1769295463613_177nbo4s2",
+      "question": "please do",
+      "reply": "How may I help you learn more about Saksham? Perhaps you're interested in his experience?",
+      "timestamp": "2026-01-24T22:57:43.613Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769295472758_gfpgpt7gk",
+      "question": "yes",
+      "reply": "Okay! Saksham is a growth and strategy professional skilled in building and scaling consumer businesses across GTM, operations, and analytics. He's known for data-led decision making and translating strategy into repeatable operating systems, especially in high-growth environments. Interested in his skills?",
+      "timestamp": "2026-01-24T22:57:52.758Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 4
+      }
+    },
+    {
+      "id": "q_1769295511915_hqrhscoou",
+      "question": "tell me about his understanding about pnl",
+      "reply": "Saksham's experience includes improving unit-level contribution at Pita Pit through menu premiumization. He also has experience reducing financial leakages and improving financial discipline through redesigned controls and governance systems. Would you like to know more about his experience with Pita Pit?",
+      "timestamp": "2026-01-24T22:58:31.915Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769295548255_7f0i2eg2g",
+      "question": "tell about his leadership style",
+      "reply": "Saksham's leadership style is data-driven, collaborative, and outcome-oriented. He focuses on earning credibility through clarity, ownership, and consistent execution. Interested in his decision-making frameworks?",
+      "timestamp": "2026-01-24T22:59:08.255Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769296209840_ettc51b5z",
+      "question": "what is his thought abt importance of customer insights",
+      "reply": "Saksham believes customer perception is a critical element in decision-making, and he uses customer insights to inform his strategies. For example, he launched a high-protein premium menu based on customer cohort analysis. Want to know about his decision frameworks?",
+      "timestamp": "2026-01-24T23:10:09.840Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769296207579_xu49cuy8z",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769296254462_gf2meob9x",
+      "question": "i see",
+      "reply": "Great! Saksham has a diverse background in business strategy, growth, and operations. Interested in his experience?",
+      "timestamp": "2026-01-24T23:10:54.463Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769296207579_xu49cuy8z",
+        "ip": "127.0.0.1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1769297519786_mhdnozuh1",
+      "question": "what is his workex",
+      "reply": "Saksham has experience in business strategy and growth, including roles at Pita Pit India and Beam Suntory. At Pita Pit India, he focused on GTM strategy, growth, and operational scale-up. At Beam Suntory, he managed regional supply planning and analytics. Interested in his key achievements?",
+      "timestamp": "2026-01-24T23:31:59.786Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769296207579_xu49cuy8z",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769297517427_qnchsfrxp"
+      }
+    },
+    {
+      "id": "q_1769297530720_54w029dxh",
+      "question": "tell me more about his hobbies",
+      "reply": "Sorry, I am unable to access this information. For more details, please contact contact@sakshammahajan.com.",
+      "timestamp": "2026-01-24T23:32:10.720Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769296207579_xu49cuy8z",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769297517427_qnchsfrxp"
+      }
+    },
+    {
+      "id": "q_1769343850878_w5j2bpu78",
+      "question": "hi",
+      "reply": "Hello! I'm Saksham.AI, here to help you learn about Saksham's professional background, experience, and career interests. What would you like to know?",
+      "timestamp": "2026-01-25T12:24:10.878Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 0,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs",
+        "is_general_conversation": true
+      }
+    },
+    {
+      "id": "q_1769343866232_jt7rugaq2",
+      "question": "tell me about his experience",
+      "reply": "Saksham has experience in business strategy and growth, with a focus on go-to-market strategy, operations, and analytics. He has worked at Pita Pit India and Beam Suntory. Interested in his skills?",
+      "timestamp": "2026-01-25T12:24:26.232Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769343888059_sfvkk1umu",
+      "question": "about education",
+      "reply": "Saksham has a PGP from the Indian School of Business, a MiM from ESSEC Business School, and a BBA from Christ University, Bangalore. Would you like to know more about his time at a specific institution?",
+      "timestamp": "2026-01-25T12:24:48.059Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353483964_yc9al2ew4",
+      "question": "asdoiahs",
+      "reply": "Sorry, I am unable to access this information. If you have any questions about Saksham's background, experience, skills, or availability, feel free to ask, or reach out to contact@sakshammahajan.com for more details.",
+      "timestamp": "2026-01-25T15:04:43.964Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 4,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353493255_iqv9jxlbx",
+      "question": "tell me about his workex",
+      "reply": "Saksham has experience in business strategy and growth. He has worked at Pita Pit India, where he led a team of 3 people operational scale-up. He also worked at Beam Suntory, where he managed regional supply planning and analytics. Interested in his skills?",
+      "timestamp": "2026-01-25T15:04:53.255Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353526549_a8orw40tt",
+      "question": "whats his most recent project?",
+      "reply": "Saksham's most recent role was as Business Strategy & Growth Lead at Pita Pit India, where he led a team of 3 people operational scale-up for the NCR launch and expansion across 11 outlets. Want to know more about his work at Pita Pit?",
+      "timestamp": "2026-01-25T15:05:26.549Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353631795_6unyk0btv",
+      "question": "thats nice, now tell me about his workex",
+      "reply": "Saksham's work experience includes roles at Pita Pit India and Beam Suntory. At Pita Pit India, he was a Business Strategy & Growth Lead and a Business Strategy & GTM Manager. At Beam Suntory, he was a Global Supply Planning Trainee. Would you like more details on his responsibilities at any of these companies?",
+      "timestamp": "2026-01-25T15:07:11.795Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353646493_1h0wspueq",
+      "question": "tell me about his education",
+      "reply": "Saksham has a PGP from the Indian School of Business, a MiM from ESSEC Business School, and a BBA from Christ University, Bangalore. Would you like more details about any of these programs?",
+      "timestamp": "2026-01-25T15:07:26.493Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353657891_y7a9k8owd",
+      "question": "i see",
+      "reply": "Is there anything specific you'd like to know about his education or other experiences? Perhaps his skills or achievements?",
+      "timestamp": "2026-01-25T15:07:37.891Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353672255_4vswy53l8",
+      "question": "skills",
+      "reply": "Saksham's core skills include business skills like Go-To-Market Strategy and Growth Strategy, tools like Power BI and POS Systems, and soft skills like Leadership and Decision Making. Interested in his specific achievements?",
+      "timestamp": "2026-01-25T15:07:52.255Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353734122_y0meov6c5",
+      "question": "tell me what hair styles he likes",
+      "reply": "Sorry, I am unable to access this information. For any further details, you can reach out to contact@sakshammahajan.com.",
+      "timestamp": "2026-01-25T15:08:54.122Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769353800465_jzv2v59rg",
+      "question": "what are the type of hairstyles he likes?",
+      "reply": "Sorry, I am unable to access this information. For any professional questions about Saksham's background, experience, skills, or availability, feel free to ask, or reach out to contact@sakshammahajan.com for more details.",
+      "timestamp": "2026-01-25T15:10:00.465Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs"
+      }
+    },
+    {
+      "id": "q_1769382251427_80nsrs21c",
+      "question": "hi",
+      "reply": "Hello! I'm Saksham.AI, here to help you learn about Saksham's professional background, experience, and career interests. What would you like to know?",
+      "timestamp": "2026-01-25T23:04:11.427Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1769382251417_r8cps7ag9",
+        "ip": "127.0.0.1",
+        "chunks_used": 0,
+        "visitor_id": null,
+        "is_general_conversation": true
+      }
+    },
+    {
+      "id": "q_1769382273081_7arbfvc4q",
+      "question": "what are the differnt hobbies he has?",
+      "reply": "Sorry, I am unable to access this information. For any specific inquiries, please contact contact@sakshammahajan.com.",
+      "timestamp": "2026-01-25T23:04:33.081Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1769382251417_r8cps7ag9",
+        "ip": "127.0.0.1",
+        "chunks_used": 5,
+        "visitor_id": null
+      }
+    },
+    {
+      "id": "q_1770042711980_8zm61iett",
+      "question": "where was he born?",
+      "reply": "I am sorry, but I cannot share personal information like place of birth. However, I can tell you that Saksham is currently based in Gurgaon, India, and is open to growth, strategy, and general management roles. Would you like to know more about his experience or skills?",
+      "timestamp": "2026-02-02T14:31:51.980Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1770042724567_z0yqxswfc",
+      "question": "tell me about his skills",
+      "reply": "Saksham has a diverse skill set developed through his experience in business strategy and growth. Here's a summary:\n\n*   Business Skills: Go-to-Market Strategy, Growth Strategy, Market Entry Design, Unit Economics, Pricing & Premiumization, Operations & SOP Design, and Business Analytics.\n*   Tools: He is proficient in Power BI, POS Systems, WhatsApp Commerce, and Zomato & Swiggy Platforms.\n*   Soft Skills: Leadership, Decision Making, Structured Problem Solving, Stakeholder Management, and Cross-Functional Collaboration.\n\nIs there any particular skill you'd like to know more about?",
+      "timestamp": "2026-02-02T14:32:04.567Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1770042751381_atlgffala",
+      "question": "tell me about his hobbies",
+      "reply": "Saksham's interests include consumer brands, marketplace economics, operations-led scaling, food & beverage ecosystems, and emerging market GTM strategies.\n\nFor more details, you can reach out to contact@sakshammahajan.com.",
+      "timestamp": "2026-02-02T14:32:31.381Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1770043284527_fcms3wt5c",
+      "question": "tell me more about his hobbies",
+      "reply": "Saksham is interested in consumer brands, marketplace economics, operations-led scaling, food & beverage ecosystems, and emerging market GTM strategies.",
+      "timestamp": "2026-02-02T14:41:24.527Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1770043693262_9ji247w4c",
+      "question": "what are his favorite places to work at?",
+      "reply": "I do not have information about Saksham's favorite places to work. I can share that his career goals are to build and scale consumer-facing businesses at the intersection of growth, strategy, and operations, and eventually lead large, multi-market platforms.",
+      "timestamp": "2026-02-02T14:48:13.262Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1770043734292_lhivi3lv1",
+      "question": "what does he like to do in his free time?",
+      "reply": "Saksham's interests include consumer brands, marketplace economics, operations-led scaling, food & beverage ecosystems, and emerging market GTM strategies.",
+      "timestamp": "2026-02-02T14:48:54.292Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 5
+      }
+    },
+    {
+      "id": "q_1770044593508_4t1u5no79",
+      "question": "hello",
+      "reply": "Hello! I'm Saksham.AI, here to help you learn about Saksham's professional background, experience, and career interests. What would you like to know?",
+      "timestamp": "2026-02-02T15:03:13.508Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 0,
+        "is_general_conversation": true
+      }
+    },
+    {
+      "id": "q_1770044609811_1p6pc548g",
+      "question": "what did he do at his last job?",
+      "reply": "At Pita Pit India, Saksham was the Business Strategy & Growth Lead from January 2024 to March 2025. He led GTM, growth, and operational scale-up for Pita Pit’s NCR launch and expansion across 11 outlets. He delivered ₹50L+ GMV in 12 months, sustained double-digit MoM growth, served 100K+ customers, reduced outlet payback period from 18 to 12 months, and maintained >95% service quality during 5–10× demand spikes.\n\nFor the full profile, see the Work page: /work",
+      "timestamp": "2026-02-02T15:03:29.811Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 1
+      }
+    },
+    {
+      "id": "q_1770044639032_oozrw8oij",
+      "question": "how does he handle conflict",
+      "reply": "Saksham earns credibility through clarity, ownership, and consistent execution. When area managers undermined his authority at QSR, he held 1:1 conversations to understand their concerns, shared data on inconsistency and customer complaints to bring objectivity, co-created SOPs incorporating field feedback, set up weekly follow-ups so area managers felt ownership, and publicly credited them for improvements. This strengthened working relationships and increased his credibility across the team.",
+      "timestamp": "2026-02-02T15:03:59.032Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 2
+      }
+    },
+    {
+      "id": "q_1770044680842_h4iujrj5w",
+      "question": "what does he do to show his dedication at work?",
+      "reply": "Saksham's leadership style is data-driven, collaborative, and outcome-oriented. He is focused on earning credibility through clarity, ownership, and consistent execution. At Pita Pit India, he delivered ₹50L+ GMV in 12 months, sustained double-digit MoM growth, served 100K+ customers, reduced outlet payback period from 18 to 12 months, and maintained >95% service quality during 5–10× demand spikes.\n\nFor the full profile, see the Work page: /work",
+      "timestamp": "2026-02-02T15:04:40.842Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 3
+      }
+    },
+    {
+      "id": "q_1770044711106_jxu2jv54k",
+      "question": "are you sure?",
+      "reply": "Yes, I am sure. Saksham's leadership style is data-driven, collaborative, and outcome-oriented, focused on earning credibility through clarity, ownership, and consistent execution. Also, at Pita Pit India, he delivered ₹50L+ GMV in 12 months, sustained double-digit MoM growth, served 100K+ customers, reduced outlet payback period from 18 to 12 months, and maintained >95% service quality during 5–10× demand spikes.",
+      "timestamp": "2026-02-02T15:05:11.106Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 6
+      }
+    },
+    {
+      "id": "q_1770044824756_r0vl2r4il",
+      "question": "are you sure sure ?",
+      "reply": "Yes, I am ready to answer your questions using only the provided information about Saksham Mahajan.",
+      "timestamp": "2026-02-02T15:07:04.756Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770042710548_0xmdf3w9v",
+        "ip": "::1",
+        "chunks_used": 1
+      }
+    },
+    {
+      "id": "q_1770046014710_mcbl8y8dp",
+      "question": "tell me more about his take on client outreach and cold calls",
+      "reply": "I don't have any information about Saksham's experience with client outreach or cold calls. However, I can share details about his experience designing a corporate membership program to increase lunchtime sales by conducting targeted outreach via WhatsApp and in-office sampling.",
+      "timestamp": "2026-02-02T15:26:54.710Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "ip": "::1",
+        "chunks_used": 6
+      }
+    },
+    {
+      "id": "q_1770046194336_uu9xmgs7h",
+      "question": "what is his perspective on client cold calls?",
+      "reply": "Saksham approaches cold calls with a strong data-oriented mindset, emphasizing productivity and efficiency. This includes disciplined tracking of outreach metrics, prioritization of high-potential leads, and continuous refinement of messaging based on outcomes. His focus is on building informed conversations that lead to sustainable, long-term relationships.",
+      "timestamp": "2026-02-02T15:29:54.336Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "ip": "::1",
+        "chunks_used": 2
+      }
+    },
+    {
+      "id": "q_1770046207975_zdb58o1dq",
+      "question": "what about CRM",
+      "reply": "I am sorry, but the provided documents do not contain information about Saksham Mahajan's experience or perspective on CRM.",
+      "timestamp": "2026-02-02T15:30:07.975Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "ip": "::1",
+        "chunks_used": 2
+      }
+    },
+    {
+      "id": "q_1770060836407_5yyamxetq",
+      "question": "tell about saksham strength",
+      "reply": "Saksham is known for data-led decision making, market entry design, and translating strategy into repeatable operating systems in high-growth environments. His leadership style is data-driven, collaborative, and outcome-oriented, focused on earning credibility through clarity, ownership, and consistent execution.",
+      "timestamp": "2026-02-02T19:33:56.407Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "ip": "::1",
+        "chunks_used": 6
+      }
+    },
+    {
+      "id": "q_1770060871754_ljcksnfx0",
+      "question": "tell me what mangoes he likes",
+      "reply": "I am sorry, but I do not have any information about Saksham's mango preferences.",
+      "timestamp": "2026-02-02T19:34:31.754Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "ip": "::1",
+        "chunks_used": 3
+      }
+    },
+    {
+      "id": "q_1770066253368_q4z3j51hw",
+      "question": "tell me about his leadership skills",
+      "reply": "Saksham's leadership style is data-driven, collaborative, and outcome-oriented. He focuses on earning credibility through clarity, ownership, and consistent execution.\n\nSaksham has experience influencing senior stakeholders by running small experiments, generating proof, and presenting outcomes. He also successfully gained buy-in from area managers for new SOPs by sharing data, co-creating the SOPs, and setting up weekly follow-ups.",
+      "timestamp": "2026-02-02T21:04:13.368Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "ip": "::1",
+        "chunks_used": 4
+      }
+    },
+    {
+      "id": "q_1770066322161_o7wlpjn2e",
+      "question": "tell me his marks in 2nd grade",
+      "reply": "I do not have access to that information. I can share details about Saksham's education and professional experiences, if you'd like.",
+      "timestamp": "2026-02-02T21:05:22.161Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "ip": "::1",
+        "chunks_used": 2
+      }
+    },
+    {
+      "id": "q_1770117149444_wblt1d9mk",
+      "question": "yo",
+      "reply": "Hi there. How can I help you learn about Saksham Mahajan?",
+      "timestamp": "2026-02-03T11:12:29.444Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770117147393_zhml66em4",
+        "ip": "::1",
+        "chunks_used": 6
+      }
+    },
+    {
+      "id": "q_1770609059341_o0fq7wjxd",
+      "question": "has he made you himself ?",
+      "reply": "I am Saksham.AI, a professional recruiting concierge chatbot representing Saksham Mahajan. I was created to help recruiters learn about Saksham's background, experience, skills, and availability.",
+      "timestamp": "2026-02-09T03:50:59.341Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770609057635_59pa5fcfx",
+        "ip": "::1",
+        "chunks_used": 6
+      }
+    },
+    {
+      "id": "q_1770609085165_flyi7fau9",
+      "question": "tell me about his work in indigo airlines",
+      "reply": "I do not have information about Saksham's work at Indigo Airlines. I can share details about his experience at Pita Pit India and Beam Suntory, if that is of interest.\n\nFor the full profile, see the Work page: /work",
+      "timestamp": "2026-02-09T03:51:25.165Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1770609057635_59pa5fcfx",
+        "ip": "::1",
+        "chunks_used": 6
+      }
+    },
+    {
+      "id": "q_1770609111684_eh2cv5n48",
+      "question": "tell me about his consulting projects",
+      "reply": "Saksham's education at ESSEC Business School included consulting projects across Danone, Dior, Decathlon, SSP, and AIDHA.",
+      "timestamp": "2026-02-09T03:51:51.684Z",
+      "is_unanswered": false,
+      "metadata": {
+        "conversation_id": "conv_1770609057635_59pa5fcfx",
+        "ip": "::1",
+        "chunks_used": 2
+      }
+    },
+    {
+      "id": "q_1770609123438_7xwne2acq",
+      "question": "tell me more about them",
+      "reply": "I do not have specific details about the consulting projects at Danone, Dior, Decathlon, SSP, and AIDHA.",
+      "timestamp": "2026-02-09T03:52:03.438Z",
+      "is_unanswered": true,
+      "metadata": {
+        "conversation_id": "conv_1770609057635_59pa5fcfx",
+        "ip": "::1",
+        "chunks_used": 2
+      }
+    }
+  ],
+  "last_updated": "2026-02-09T03:52:03.438Z",
+  "metadata": {
+    "description": "Complete log of all questions asked to the chatbot",
+    "format": "Each entry contains question, response, timestamp, and metadata"
+  }
+}

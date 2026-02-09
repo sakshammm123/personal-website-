@@ -1,0 +1,42 @@
+{
+  "leads": [
+    {
+      "id": "lead_1769295787101_dn4fa4too",
+      "name": "saksham",
+      "organisation": "melloe",
+      "email": "saksham@mellow.com",
+      "phone": null,
+      "conversation_id": "conv_1769276303593_knj07p8lj",
+      "activity_duration_ms": 517062,
+      "submitted_at": "2026-01-24T23:03:07.102Z",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "lead_1769296270848_7ltroabjy",
+      "name": "sasd",
+      "organisation": "sda",
+      "email": "sasdjasd@gmail.com",
+      "phone": null,
+      "conversation_id": "conv_1769296207579_xu49cuy8z",
+      "activity_duration_ms": 63260,
+      "submitted_at": "2026-01-24T23:11:10.848Z",
+      "ip": "127.0.0.1"
+    },
+    {
+      "id": "lead_1769343938855_01kd56b2y",
+      "name": "hello",
+      "organisation": "lhiclihzs",
+      "email": "dlihadsh@gmail.com",
+      "phone": "9971221133",
+      "conversation_id": "conv_1769343850872_ztic0q3yh",
+      "activity_duration_ms": 101397,
+      "submitted_at": "2026-01-25T12:25:38.855Z",
+      "ip": "127.0.0.1"
+    }
+  ],
+  "last_updated": "2026-01-25T12:25:38.855Z",
+  "metadata": {
+    "description": "Leads collected from users who want to connect with Saksham",
+    "format": "Each entry contains contact information and conversation metadata"
+  }
+}

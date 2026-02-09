@@ -1,0 +1,198 @@
+{
+  "name": "Saksham Mahajan",
+  "title": "Growth, GTM & Business Strategy Leader",
+  "location": "Gurgaon, India",
+  "availability": "Open to growth, strategy, and general management roles",
+  "languages": ["English", "Hindi"],
+  "summary": "Growth and strategy professional with experience building and scaling consumer businesses across GTM, operations, and analytics. Known for data-led decision making, market entry design, and translating strategy into repeatable operating systems in high-growth environments.",
+  "links": {
+    "linkedin": "https://linkedin.com/in/saksham-mahajan",
+    "portfolio": "https://sakshammahajan.com/",
+    "email": "contact@sakshammahajan.com"
+  },
+  "education": [
+    {
+      "institution": "Indian School of Business",
+      "degree": "PGP",
+      "duration": "Apr 2025 – Present",
+      "details": [
+        "GMAT 760",
+        "ISB Merit Scholar (Top 2%) – 25% tuition waiver",
+        "Semi-finalist, Tata Imagination Challenge (Top 0.4%)",
+        "Designed AI SaaS venture (ISPROUTE shortlist)",
+        "ELP project delivering GMV growth roadmap for 400+ sellers"
+      ]
+    },
+    {
+      "institution": "ESSEC Business School",
+      "degree": "MiM – Innovation, Entrepreneurship & Sustainability",
+      "duration": "Sep 2021 – Jun 2023",
+      "details": [
+        "Winner, L’Oréal Digital Challenge (APAC)",
+        "Consulting projects across Danone, Dior, Decathlon, SSP, AIDHA",
+        "Led Singapore Immersion Event (₹10L+ budget, 135+ participants)"
+      ]
+    },
+    {
+      "institution": "Christ University, Bangalore",
+      "degree": "BBA – Marketing",
+      "duration": "Jun 2018 – Jul 2021",
+      "details": [
+        "Published research on impulse buying behaviour",
+        "Led venture design project (GPS biking gloves)",
+        "Social Media Head – Theatre Group (1.2M+ digital views)"
+      ]
+    }
+  ],
+  "experience": [
+    {
+      "role": "Business Strategy & Growth Lead",
+      "company": "Pita Pit India",
+      "duration": "Jan 2024 – Mar 2025",
+      "summary": "Led GTM, growth, and operational scale-up for Pita Pit’s NCR launch and expansion across 11 outlets.",
+      "key_outcomes": [
+        "Delivered ₹50L+ GMV in 12 months",
+        "Sustained double-digit MoM growth",
+        "Served 100K+ customers",
+        "Reduced outlet payback period from 18 to 12 months",
+        "Maintained >95% service quality during 5–10× demand spikes"
+      ]
+    },
+    {
+      "role": "Business Strategy & GTM Manager",
+      "company": "Pita Pit India",
+      "duration": "Jan 2023 – Dec 2023",
+      "summary": "Designed India entry strategy, pilot-tested GTM assumptions, and built scalable operating playbooks.",
+      "key_outcomes": [
+        "Built ₹80 Cr, 5-year, 100-outlet rollout plan",
+        "Improved sales forecast accuracy by 25%",
+        "Accelerated rollout pace by ~30%",
+        "Validated GTM via 1,000+ consumer pilots"
+      ]
+    },
+    {
+      "role": "Global Supply Planning Trainee",
+      "company": "Beam Suntory",
+      "duration": "Jul 2022 – Dec 2022",
+      "summary": "Managed regional supply planning and analytics for SEA and Travel Retail markets.",
+      "key_outcomes": [
+        "Planned USD 9–10M monthly imports",
+        "Improved shipment planning accuracy by 12%",
+        "Reduced reporting turnaround time by 40%",
+        "Trained 50+ stakeholders on Power BI dashboards"
+      ]
+    }
+  ],
+  "core_skills": {
+    "business": [
+      "Go-To-Market Strategy",
+      "Growth Strategy",
+      "Market Entry Design",
+      "Unit Economics",
+      "Pricing & Premiumization",
+      "Operations & SOP Design",
+      "Business Analytics"
+    ],
+    "tools": [
+      "Power BI",
+      "POS Systems",
+      "WhatsApp Commerce",
+      "Zomato & Swiggy Platforms"
+    ],
+    "soft_skills": [
+      "Leadership",
+      "Decision Making",
+      "Structured Problem Solving",
+      "Stakeholder Management",
+      "Cross-Functional Collaboration"
+    ]
+  },
+  "key_metrics": {
+    "aov_uplift": "15–20%",
+    "wastage_reduction": "30–34%",
+    "processing_time_reduction": "43%",
+    "forecast_accuracy_improvement": "25%",
+    "outlet_ramp_up_acceleration": "30%"
+  },
+  "star_stories": [
+    {
+      "id": "PP01",
+      "title": "Pivot from Malls to Micro-Markets",
+      "competencies": ["Decision Making", "Communication"],
+      "summary": "Replaced mall-led expansion with a data-backed micro-market strategy focused on offices, universities, food courts, and walking markets.",
+      "outcome": "Improved unit economics and made large-scale rollout viable."
+    },
+    {
+      "id": "PP02",
+      "title": "Managing 5–10× Demand Surges",
+      "competencies": ["Problem Solving", "Flexibility"],
+      "summary": "Designed temporary capacity buffers and SOPs to absorb extreme demand spikes during aggregator campaigns.",
+      "outcome": "Maintained service quality above 95% during peak visibility."
+    },
+    {
+      "id": "PP03",
+      "title": "Multi-Format Kitchen Redesign",
+      "competencies": ["Leadership", "Strategic Thinking"],
+      "summary": "Redesigned Canadian kitchen models into five India-optimized formats.",
+      "outcome": "Reduced capex and payback period significantly."
+    },
+    {
+      "id": "PP04",
+      "title": "Zero Waste Challenge",
+      "competencies": ["Initiative", "Execution"],
+      "summary": "Introduced a gamified wastage reduction program driven by store-level ownership.",
+      "outcome": "Reduced wastage by over 30%."
+    },
+    {
+      "id": "PP05",
+      "title": "Menu Premiumization & Price Discrimination",
+      "competencies": ["Commercial Insight", "Decision Making"],
+      "summary": "Launched a high-protein premium menu based on customer cohort analysis.",
+      "outcome": "Increased AOV by 15–20%."
+    },
+    {
+      "id": "PP06",
+      "title": "Humanizing a Digital-First Brand",
+      "competencies": ["Empathy", "Communication"],
+      "summary": "Introduced chef story cards with QR-linked reels to build trust and emotional connection.",
+      "outcome": "Reduced complaints and improved repeat rates."
+    }
+  ],
+  "operating_principles": [
+    "Data before scale",
+    "Perceived value drives willingness to pay",
+    "Temporary inefficiency is acceptable if it accelerates learning",
+    "Systems and SOPs outperform individual heroics",
+    "Execution discipline enables sustainable growth"
+  ],
+  "decision_frameworks": [
+    {
+      "name": "Market Entry Evaluation",
+      "steps": [
+        "Demand density analysis",
+        "Customer persona segmentation",
+        "Unit economics validation",
+        "Operational feasibility assessment",
+        "Pilot testing before scale"
+      ]
+    },
+    {
+      "name": "Product & Menu Launch",
+      "steps": [
+        "Insight identification",
+        "Small-scale experimentation",
+        "Operational stress testing",
+        "Data-backed rollout decision"
+      ]
+    }
+  ],
+  "leadership_style": "Data-driven, collaborative, and outcome-oriented. Focused on earning credibility through clarity, ownership, and consistent execution.",
+  "career_goals": "To build and scale consumer-facing businesses at the intersection of growth, strategy, and operations, and eventually lead large, multi-market platforms.",
+  "interests": [
+    "Consumer brands",
+    "Marketplace economics",
+    "Operations-led scaling",
+    "Food & beverage ecosystems",
+    "Emerging market GTM strategies"
+  ]
+}

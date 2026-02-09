@@ -1,0 +1,227 @@
+{
+  "unanswered_questions": [
+    {
+      "id": "uq_1769276721322_ojjrc7arp",
+      "question": "does he like mangoes",
+      "reply_given": "Sorry, I am unable to access this information. For any other questions, please reach out to contact@sakshammahajan.com.",
+      "first_asked": "2026-01-24T17:45:21.322Z",
+      "last_asked": "2026-01-24T17:45:21.322Z",
+      "ask_count": 1,
+      "status": "answered",
+      "answer": "Interesting question! he is actually allergic to mangoes",
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "chunks_used": 5,
+        "ip": "127.0.0.1"
+      },
+      "answered_at": "2026-01-24T17:46:34.350Z"
+    },
+    {
+      "id": "uq_1769294793680_h9wp8jzoz",
+      "question": "does he like mangoes?",
+      "reply_given": "Sorry, I am unable to access this information. For personal questions, please contact contact@sakshammahajan.com. However, I can share details on his experience in the Food & Beverage industry. Would you like to know more?",
+      "first_asked": "2026-01-24T22:46:33.680Z",
+      "last_asked": "2026-01-24T22:47:26.579Z",
+      "ask_count": 2,
+      "status": "answered",
+      "answer": "he is allergic to mangoes",
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "chunks_used": 5,
+        "ip": "127.0.0.1"
+      }
+    },
+    {
+      "id": "uq_1769294934642_wo6xxwxva",
+      "question": "does he like cars?",
+      "reply_given": "Sorry, I am unable to access this information. Please contact contact@sakshammahajan.com for any personal questions. However, I can share information about his professional interests, such as consumer brands or emerging market GTM strategies. Would you like to know more?",
+      "first_asked": "2026-01-24T22:48:54.642Z",
+      "last_asked": "2026-01-24T22:48:54.642Z",
+      "ask_count": 1,
+      "status": "answered",
+      "answer": "he does like cars, he also likes bikes",
+      "metadata": {
+        "conversation_id": "conv_1769276303593_knj07p8lj",
+        "chunks_used": 5,
+        "ip": "127.0.0.1"
+      },
+      "answered_at": "2026-01-24T22:49:19.071Z"
+    },
+    {
+      "id": "uq_1769297530723_6faymecjl",
+      "question": "tell me more about his hobbies",
+      "reply_given": "Sorry, I am unable to access this information. For more details, please contact contact@sakshammahajan.com.",
+      "first_asked": "2026-01-24T23:32:10.723Z",
+      "last_asked": "2026-01-24T23:32:10.723Z",
+      "ask_count": 1,
+      "status": "answered",
+      "answer": "I have a long-standing interest in fitness and nutrition, which informs a disciplined and health-conscious lifestyle. I have been actively involved in theatre for over a decade, developing strong communication, storytelling, and collaboration skills. I have also been cooking since the age of 12, with a particular interest in exploring diverse cuisines and authentic regional food from across India and globally. Additionally, I pursue filmmaking through personal projects, using it as a creative outlet for visual storytelling.",
+      "metadata": {
+        "conversation_id": "conv_1769296207579_xu49cuy8z",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769297517427_qnchsfrxp",
+        "ip": "127.0.0.1"
+      }
+    },
+    {
+      "id": "uq_1769353483966_2tc25i4nt",
+      "question": "asdoiahs",
+      "reply_given": "Sorry, I am unable to access this information. If you have any questions about Saksham's background, experience, skills, or availability, feel free to ask, or reach out to contact@sakshammahajan.com for more details.",
+      "first_asked": "2026-01-25T15:04:43.966Z",
+      "last_asked": "2026-01-25T15:04:43.966Z",
+      "ask_count": 1,
+      "status": "ignored",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "chunks_used": 4,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs",
+        "ip": "127.0.0.1"
+      }
+    },
+    {
+      "id": "uq_1769353734125_ea80lhbyv",
+      "question": "tell me what hair styles he likes",
+      "reply_given": "Sorry, I am unable to access this information. For any further details, you can reach out to contact@sakshammahajan.com.",
+      "first_asked": "2026-01-25T15:08:54.125Z",
+      "last_asked": "2026-01-25T15:08:54.125Z",
+      "ask_count": 1,
+      "status": "answered",
+      "answer": "i like all type of hair styles",
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs",
+        "ip": "127.0.0.1"
+      },
+      "answered_at": "2026-01-25T15:09:27.300Z"
+    },
+    {
+      "id": "uq_1769353800468_hmqwcg3u1",
+      "question": "what are the type of hairstyles he likes?",
+      "reply_given": "Sorry, I am unable to access this information. For any professional questions about Saksham's background, experience, skills, or availability, feel free to ask, or reach out to contact@sakshammahajan.com for more details.",
+      "first_asked": "2026-01-25T15:10:00.468Z",
+      "last_asked": "2026-01-25T15:10:00.468Z",
+      "ask_count": 1,
+      "status": "ignored",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1769343850872_ztic0q3yh",
+        "chunks_used": 5,
+        "visitor_id": "visitor_1769343850869_p3zn9vsqs",
+        "ip": "127.0.0.1"
+      }
+    },
+    {
+      "id": "uq_1769382273082_mb2veeuqh",
+      "question": "what are the differnt hobbies he has?",
+      "reply_given": "Sorry, I am unable to access this information. For any specific inquiries, please contact contact@sakshammahajan.com.",
+      "first_asked": "2026-01-25T23:04:33.082Z",
+      "last_asked": "2026-01-25T23:04:33.082Z",
+      "ask_count": 1,
+      "status": "ignored",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1769382251417_r8cps7ag9",
+        "chunks_used": 5,
+        "visitor_id": null,
+        "ip": "127.0.0.1"
+      }
+    },
+    {
+      "id": "uq_1770046014714_ccmlej69a",
+      "question": "tell me more about his take on client outreach and cold calls",
+      "reply_given": "I don't have any information about Saksham's experience with client outreach or cold calls. However, I can share details about his experience designing a corporate membership program to increase lunchtime sales by conducting targeted outreach via WhatsApp and in-office sampling.",
+      "first_asked": "2026-02-02T15:26:54.714Z",
+      "last_asked": "2026-02-02T15:26:54.714Z",
+      "ask_count": 1,
+      "status": "answered",
+      "answer": "He approaches cold calls with a strong data-oriented mindset, recognizing that productivity and efficiency are critical. This includes disciplined tracking of outreach metrics, prioritization of high-potential leads, and continuous refinement of messaging based on outcomes. For broader client outreach, he places greater emphasis on listening and understanding client needs, believing effective engagement is driven more by insight and relevance than by overt selling. His focus is on building informed conversations that lead to sustainable, long-term relationships.",
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "chunks_used": 6,
+        "ip": "::1"
+      }
+    },
+    {
+      "id": "uq_1770046207980_panl1mx6k",
+      "question": "what about CRM",
+      "reply_given": "I am sorry, but the provided documents do not contain information about Saksham Mahajan's experience or perspective on CRM.",
+      "first_asked": "2026-02-02T15:30:07.980Z",
+      "last_asked": "2026-02-02T15:30:07.980Z",
+      "ask_count": 1,
+      "status": "pending",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "chunks_used": 2,
+        "ip": "::1"
+      }
+    },
+    {
+      "id": "uq_1770060871760_872s12mxb",
+      "question": "tell me what mangoes he likes",
+      "reply_given": "I am sorry, but I do not have any information about Saksham's mango preferences.",
+      "first_asked": "2026-02-02T19:34:31.761Z",
+      "last_asked": "2026-02-02T19:34:31.761Z",
+      "ask_count": 1,
+      "status": "ignored",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "chunks_used": 3,
+        "ip": "::1"
+      }
+    },
+    {
+      "id": "uq_1770066322176_8cvsg1l9v",
+      "question": "tell me his marks in 2nd grade",
+      "reply_given": "I do not have access to that information. I can share details about Saksham's education and professional experiences, if you'd like.",
+      "first_asked": "2026-02-02T21:05:22.176Z",
+      "last_asked": "2026-02-02T21:05:22.176Z",
+      "ask_count": 1,
+      "status": "pending",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1770046012829_og6jlirt7",
+        "chunks_used": 2,
+        "ip": "::1"
+      }
+    },
+    {
+      "id": "uq_1770609085171_0b5k9edwn",
+      "question": "tell me about his work in indigo airlines",
+      "reply_given": "I do not have information about Saksham's work at Indigo Airlines. I can share details about his experience at Pita Pit India and Beam Suntory, if that is of interest.\n\nFor the full profile, see the Work page: /work",
+      "first_asked": "2026-02-09T03:51:25.171Z",
+      "last_asked": "2026-02-09T03:51:25.171Z",
+      "ask_count": 1,
+      "status": "pending",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1770609057635_59pa5fcfx",
+        "chunks_used": 6,
+        "ip": "::1"
+      }
+    },
+    {
+      "id": "uq_1770609123442_d1687dzai",
+      "question": "tell me more about them",
+      "reply_given": "I do not have specific details about the consulting projects at Danone, Dior, Decathlon, SSP, and AIDHA.",
+      "first_asked": "2026-02-09T03:52:03.442Z",
+      "last_asked": "2026-02-09T03:52:03.442Z",
+      "ask_count": 1,
+      "status": "pending",
+      "answer": null,
+      "metadata": {
+        "conversation_id": "conv_1770609057635_59pa5fcfx",
+        "chunks_used": 2,
+        "ip": "::1"
+      }
+    }
+  ],
+  "last_updated": "2026-02-09T03:52:03.442Z",
+  "metadata": {
+    "description": "Questions that the chatbot couldn't answer or used fallback responses",
+    "format": "Each entry contains the question, response given, timestamp, and status"
+  }
+}
