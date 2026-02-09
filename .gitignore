@@ -28,6 +28,9 @@ yarn-error.log*
 .env*.local
 .env
 
+# Production environment variables reference (contains secrets)
+ENV_VARIABLES_PRODUCTION.md
+
 # vercel
 .vercel
 
