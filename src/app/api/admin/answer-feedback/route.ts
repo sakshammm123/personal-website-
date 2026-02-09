@@ -3,6 +3,10 @@ import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth-helper';
 import { db } from '@/lib/db';
 
+// Force dynamic rendering
+export const dynamic = 'force-dynamic';
+export const runtime = 'nodejs';
+
 export async function GET(request: NextRequest) {
   try {
     const session = await auth();
