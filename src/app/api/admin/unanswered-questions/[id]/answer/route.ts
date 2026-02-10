@@ -56,7 +56,7 @@ export async function POST(
 
     return NextResponse.json({
       success: true,
-      chunk_added: chunkResult ? { title: question, added: chunkResult.added } : null
+      chunk_added: chunkResult ? { title: existing.question, added: chunkResult.added } : null
     });
   } catch (error: any) {
     console.error('Error saving answer:', error);
