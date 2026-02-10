@@ -45,10 +45,11 @@ export async function POST(
       }
     });
 
+    const questionText = existing.question;
     let chunkResult: { added: number } | null = null;
     if (add_to_knowledge_base) {
       try {
-        chunkResult = await addAdminAnswerToKnowledgeBase(existing.question, trimmedAnswer);
+        chunkResult = await addAdminAnswerToKnowledgeBase(questionText, trimmedAnswer);
       } catch (err) {
         console.error('Failed to add answer to knowledge base:', err);
       }
@@ -56,7 +57,7 @@ export async function POST(
 
     return NextResponse.json({
       success: true,
-      chunk_added: chunkResult ? { title: existing.question, added: chunkResult.added } : null
+      chunk_added: chunkResult ? { title: questionText, added: chunkResult.added } : null
     });
   } catch (error: any) {
     console.error('Error saving answer:', error);
