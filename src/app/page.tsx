@@ -96,27 +96,22 @@ export default function HomePage() {
         <h2 className="text-2xl font-bold text-brown-900 md:text-3xl">Profile Summary</h2>
       </div>
       <ScrollAnimation direction="up" delay={0.1}>
-        <div className="flex flex-col lg:flex-row lg:items-center lg:gap-12">
-          <section className="space-y-4 min-w-0 flex-1">
-            <div className="space-y-4 text-brown-700 leading-relaxed max-w-4xl">
-              <p className="text-base md:text-lg">
-                Saksham is a growth-oriented general management professional who approaches business through first-principles thinking, customer insight, and execution discipline. His experience across consumer and food service businesses has involved working on problems where strategy must translate cleanly into operations, and where decisions are tested in real market conditions rather than presentations.
-              </p>
-              <p className="text-base md:text-lg">
-                His educational journey across India, Europe, and Singapore has shaped a global yet grounded perspective. Formal training in marketing and management, combined with exposure to diverse academic systems and cultures, has strengthened his ability to structure ambiguity, evaluate trade-offs, and think across functions with clarity and intent.
-              </p>
-              <p className="text-base md:text-lg">
-                Professionally, Saksham has operated in both multinational and entrepreneurial environments. Experience within a global consumer organization reinforced the importance of rigor, process, and cross-market coordination, while hands-on involvement in scaling a food service brand sharpened his bias toward ownership, adaptability, and execution across market entry and operations.
-              </p>
-              <p className="text-base md:text-lg">
-                He is motivated by roles that demand accountability across functions, reward sound judgment under uncertainty, and offer the opportunity to build systems and growth engines that create durable, long-term value.
-              </p>
-            </div>
-          </section>
-          <aside className="shrink-0 w-full lg:w-80 xl:w-96 mt-8 lg:mt-0">
-            <div className="relative aspect-square max-w-sm mx-auto lg:mx-0 rounded-lg border border-brown-200/60 bg-white overflow-hidden min-h-[200px]" aria-hidden />
-          </aside>
-        </div>
+        <section className="space-y-4 min-w-0 max-w-4xl">
+          <div className="space-y-4 text-brown-700 leading-relaxed">
+            <p className="text-base md:text-lg">
+              Saksham is a growth-oriented general management professional who approaches business through first-principles thinking, customer insight, and execution discipline. His experience across consumer and food service businesses has involved working on problems where strategy must translate cleanly into operations, and where decisions are tested in real market conditions rather than presentations.
+            </p>
+            <p className="text-base md:text-lg">
+              His educational journey across India, Europe, and Singapore has shaped a global yet grounded perspective. Formal training in marketing and management, combined with exposure to diverse academic systems and cultures, has strengthened his ability to structure ambiguity, evaluate trade-offs, and think across functions with clarity and intent.
+            </p>
+            <p className="text-base md:text-lg">
+              Professionally, Saksham has operated in both multinational and entrepreneurial environments. Experience within a global consumer organization reinforced the importance of rigor, process, and cross-market coordination, while hands-on involvement in scaling a food service brand sharpened his bias toward ownership, adaptability, and execution across market entry and operations.
+            </p>
+            <p className="text-base md:text-lg">
+              He is motivated by roles that demand accountability across functions, reward sound judgment under uncertainty, and offer the opportunity to build systems and growth engines that create durable, long-term value.
+            </p>
+          </div>
+        </section>
       </ScrollAnimation>
 
       {/* Decorative Separator */}
