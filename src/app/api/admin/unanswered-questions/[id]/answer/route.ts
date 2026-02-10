@@ -1,6 +1,7 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth-helper';
-import { loadUnansweredQuestions, saveUnansweredQuestions, addAdminAnswerToKnowledgeBase } from '@/lib/chatbot-service';
+import { addAdminAnswerToKnowledgeBase } from '@/lib/chatbot-service';
+import { db } from '@/lib/db';
 
 export async function POST(
   request: NextRequest,
@@ -23,28 +24,31 @@ export async function POST(
       );
     }
 
-    const data = await loadUnansweredQuestions();
-    const questionIndex = data.unanswered_questions.findIndex(
-      (q: any) => q.id === id
-    );
+    const existing = await db.unansweredQuestion.findUnique({
+      where: { id }
+    });
 
-    if (questionIndex === -1) {
+    if (!existing) {
       return NextResponse.json(
         { error: 'Question not found' },
         { status: 404 }
       );
     }
 
-    const question = data.unanswered_questions[questionIndex].question;
-    data.unanswered_questions[questionIndex].answer = answer.trim();
-    data.unanswered_questions[questionIndex].status = 'answered';
+    const trimmedAnswer = answer.trim();
 
-    await saveUnansweredQuestions(data);
+    await db.unansweredQuestion.update({
+      where: { id },
+      data: {
+        answer: trimmedAnswer,
+        status: 'answered'
+      }
+    });
 
     let chunkResult: { added: number } | null = null;
     if (add_to_knowledge_base) {
       try {
-        chunkResult = await addAdminAnswerToKnowledgeBase(question, answer.trim());
+        chunkResult = await addAdminAnswerToKnowledgeBase(existing.question, trimmedAnswer);
       } catch (err) {
         console.error('Failed to add answer to knowledge base:', err);
       }

@@ -189,3 +189,36 @@ model AnswerFeedback {
   @@index([helpful])
   @@index([createdAt])
 }
+
+model ChatQuestion {
+  id           String   @id
+  question     String
+  reply        String
+  askedAt      DateTime @default(now())
+  isUnanswered Boolean  @default(false)
+  conversationId String?
+  metadata     Json?
+  createdAt    DateTime @default(now())
+
+  @@index([conversationId])
+  @@index([askedAt])
+  @@index([isUnanswered])
+}
+
+model UnansweredQuestion {
+  id        String   @id
+  question  String
+  replyGiven String?
+  firstAsked DateTime
+  lastAsked  DateTime
+  askCount   Int      @default(1)
+  status     String   @default("pending") // "pending", "answered", "ignored"
+  answer     String?
+  metadata   Json?
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([status])
+  @@index([firstAsked])
+  @@index([lastAsked])
+}

@@ -4,6 +4,7 @@
 import { GoogleGenerativeAI } from '@google/generative-ai';
 import { promises as fs } from 'fs';
 import path from 'path';
+import { db } from '@/lib/db';
 
 // Paths
 const KNOWLEDGE_BASE_DIR = path.join(process.cwd(), 'data', 'chatbot', 'knowledge-base');
@@ -89,46 +90,62 @@ async function loadProfile() {
   }
 }
 
-// Load unanswered questions
+// Load unanswered questions from the database (with backward-compatible shape)
 async function loadUnansweredQuestions() {
   try {
-    const data = await fs.readFile(UNANSWERED_QUESTIONS_FILE, 'utf8');
-    return JSON.parse(data);
+    const items = await db.unansweredQuestion.findMany({
+      orderBy: { firstAsked: 'asc' }
+    });
+
+    return {
+      unanswered_questions: items.map((item) => ({
+        id: item.id,
+        question: item.question,
+        reply_given: item.replyGiven,
+        first_asked: item.firstAsked.toISOString(),
+        last_asked: item.lastAsked.toISOString(),
+        ask_count: item.askCount,
+        status: item.status,
+        answer: item.answer,
+        metadata: item.metadata ?? {}
+      })),
+      last_updated: new Date().toISOString(),
+      metadata: {
+        description: 'Unanswered chatbot questions stored in database',
+        format: 'Each entry mirrors previous JSON structure but is backed by Prisma'
+      }
+    };
   } catch (error) {
+    console.error('Failed to load unanswered questions from database:', error);
     return { unanswered_questions: [], last_updated: null, metadata: {} };
   }
 }
 
-// Save unanswered questions
-async function saveUnansweredQuestions(data: any) {
-  try {
-    data.last_updated = new Date().toISOString();
-    await fs.writeFile(UNANSWERED_QUESTIONS_FILE, JSON.stringify(data, null, 2), 'utf8');
-  } catch (error) {
-    console.error('Failed to save unanswered questions:', error);
-  }
-}
-
-// Load question log
+// Load question log from the database (with backward-compatible shape)
 async function loadQuestionLog() {
   try {
-    const data = await fs.readFile(QUESTION_LOG_FILE, 'utf8');
-    return JSON.parse(data);
-  } catch (error) {
-    return { all_questions: [], last_updated: null, metadata: {} };
-  }
-}
+    const questions = await db.chatQuestion.findMany({
+      orderBy: { askedAt: 'asc' }
+    });
 
-// Save question log
-async function saveQuestionLog(data: any) {
-  try {
-    data.last_updated = new Date().toISOString();
-    if (data.all_questions.length > 1000) {
-      data.all_questions = data.all_questions.slice(-1000);
-    }
-    await fs.writeFile(QUESTION_LOG_FILE, JSON.stringify(data, null, 2), 'utf8');
+    return {
+      all_questions: questions.map((q) => ({
+        id: q.id,
+        question: q.question,
+        reply: q.reply,
+        timestamp: q.askedAt.toISOString(),
+        is_unanswered: q.isUnanswered,
+        metadata: q.metadata ?? {}
+      })),
+      last_updated: new Date().toISOString(),
+      metadata: {
+        description: 'Complete log of all questions asked to the chatbot (database-backed)',
+        format: 'Each entry contains question, response, timestamp, and metadata'
+      }
+    };
   } catch (error) {
-    console.error('Failed to save question log:', error);
+    console.error('Failed to load question log from database:', error);
+    return { all_questions: [], last_updated: null, metadata: {} };
   }
 }
 
@@ -175,12 +192,11 @@ function isUnansweredReply(reply: string, userQuery: string): boolean {
   return false;
 }
 
-// Log question
+// Log question to the database
 async function logQuestion(question: string, reply: string, metadata: any = {}) {
   try {
-    const logData = await loadQuestionLog();
     const isUnanswered = isUnansweredReply(reply, question);
-    
+
     const entry = {
       id: `q_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
       question,
@@ -194,63 +210,104 @@ async function logQuestion(question: string, reply: string, metadata: any = {}) 
         ...metadata
       }
     };
-    
-    logData.all_questions.push(entry);
-    await saveQuestionLog(logData);
-    
+
+    // Persist to database
+    await db.chatQuestion.create({
+      data: {
+        id: entry.id,
+        question: entry.question,
+        reply: entry.reply,
+        askedAt: new Date(entry.timestamp),
+        isUnanswered: entry.is_unanswered,
+        conversationId: entry.metadata.conversation_id || null,
+        metadata: entry.metadata
+      }
+    });
+
     if (isUnanswered) {
       await logUnansweredQuestion(question, reply, metadata);
     }
-    
+
     return entry;
   } catch (error) {
-    console.error('Failed to log question:', error);
+    console.error('Failed to log question to database:', error);
   }
 }
 
-// Log unanswered question
+// Log unanswered question to the database
 async function logUnansweredQuestion(question: string, reply: string, metadata: any = {}) {
   try {
-    const data = await loadUnansweredQuestions();
-    
-    const existingIndex = data.unanswered_questions.findIndex(
-      (q: any) => q.question.toLowerCase().trim() === question.toLowerCase().trim()
-    );
-    
-    const entry = {
-      id: existingIndex >= 0 ? data.unanswered_questions[existingIndex].id : `uq_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
-      question,
-      reply_given: reply,
-      first_asked: existingIndex >= 0 
-        ? data.unanswered_questions[existingIndex].first_asked 
-        : new Date().toISOString(),
-      last_asked: new Date().toISOString(),
-      ask_count: existingIndex >= 0 
-        ? (data.unanswered_questions[existingIndex].ask_count || 1) + 1 
-        : 1,
-      status: existingIndex >= 0 
-        ? data.unanswered_questions[existingIndex].status 
-        : 'pending',
-      answer: existingIndex >= 0 
-        ? data.unanswered_questions[existingIndex].answer 
-        : null,
-      metadata: {
-        conversation_id: metadata.conversation_id || null,
-        chunks_used: metadata.chunks_used || 0,
-        ...metadata
+    const existing = await db.unansweredQuestion.findFirst({
+      where: {
+        question: {
+          equals: question,
+          mode: 'insensitive'
+        }
       }
-    };
-    
-    if (existingIndex >= 0) {
-      data.unanswered_questions[existingIndex] = entry;
-    } else {
-      data.unanswered_questions.push(entry);
+    });
+
+    const now = new Date();
+
+    if (existing) {
+      const updated = await db.unansweredQuestion.update({
+        where: { id: existing.id },
+        data: {
+          replyGiven: reply,
+          lastAsked: now,
+          askCount: existing.askCount + 1,
+          metadata: {
+            ...(existing.metadata as any),
+            conversation_id: metadata.conversation_id || null,
+            chunks_used: metadata.chunks_used || 0,
+            ...metadata
+          }
+        }
+      });
+
+      return {
+        id: updated.id,
+        question: updated.question,
+        reply_given: updated.replyGiven,
+        first_asked: updated.firstAsked.toISOString(),
+        last_asked: updated.lastAsked.toISOString(),
+        ask_count: updated.askCount,
+        status: updated.status,
+        answer: updated.answer,
+        metadata: updated.metadata ?? {}
+      };
     }
-    
-    await saveUnansweredQuestions(data);
-    return entry;
+
+    const created = await db.unansweredQuestion.create({
+      data: {
+        id: `uq_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`,
+        question,
+        replyGiven: reply,
+        firstAsked: now,
+        lastAsked: now,
+        askCount: 1,
+        status: 'pending',
+        answer: null,
+        metadata: {
+          conversation_id: metadata.conversation_id || null,
+          chunks_used: metadata.chunks_used || 0,
+          ...metadata
+        }
+      }
+    });
+
+    return {
+      id: created.id,
+      question: created.question,
+      reply_given: created.replyGiven,
+      first_asked: created.firstAsked.toISOString(),
+      last_asked: created.lastAsked.toISOString(),
+      ask_count: created.askCount,
+      status: created.status,
+      answer: created.answer,
+      metadata: created.metadata ?? {}
+    };
   } catch (error) {
-    console.error('Failed to log unanswered question:', error);
+    console.error('Failed to log unanswered question to database:', error);
   }
 }
 
@@ -772,9 +829,7 @@ export async function processChatMessage(
 // Export other functions needed by admin routes
 export {
   loadUnansweredQuestions,
-  saveUnansweredQuestions,
   loadQuestionLog,
-  saveQuestionLog,
   logUnansweredQuestion,
   ensureDirectories
 };

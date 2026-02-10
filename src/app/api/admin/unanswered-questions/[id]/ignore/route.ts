@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { auth } from '@/lib/auth-helper';
-import { loadUnansweredQuestions, saveUnansweredQuestions } from '@/lib/chatbot-service';
+import { db } from '@/lib/db';
 
 export async function POST(
   request: NextRequest,
@@ -13,20 +13,22 @@ export async function POST(
     }
 
     const { id } = await params;
-    const data = await loadUnansweredQuestions();
-    const questionIndex = data.unanswered_questions.findIndex(
-      (q: any) => q.id === id
-    );
 
-    if (questionIndex === -1) {
+    const existing = await db.unansweredQuestion.findUnique({
+      where: { id }
+    });
+
+    if (!existing) {
       return NextResponse.json(
         { error: 'Question not found' },
         { status: 404 }
       );
     }
 
-    data.unanswered_questions[questionIndex].status = 'ignored';
-    await saveUnansweredQuestions(data);
+    await db.unansweredQuestion.update({
+      where: { id },
+      data: { status: 'ignored' }
+    });
 
     return NextResponse.json({ success: true });
   } catch (error: any) {
