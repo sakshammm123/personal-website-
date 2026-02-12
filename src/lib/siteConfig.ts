@@ -7,7 +7,7 @@ export const siteConfig = {
   // Email must be configured via env. Do not hardcode.
   email: process.env.NEXT_PUBLIC_CONTACT_EMAIL,
   // Resume PDF is expected in /public. Configurable via env.
-  resumePath: process.env.NEXT_PUBLIC_RESUME_PATH ?? "/resume.pdf",
+  resumePath: process.env.NEXT_PUBLIC_RESUME_PATH ?? "/Saksham Mahajan Resume_26.pdf",
   // Site URL for metadata (canonical URLs, Open Graph, etc.)
   // Uses NEXT_PUBLIC_SITE_URL, then NEXTAUTH_URL, then Vercel's VERCEL_URL, then localhost
   siteUrl:
