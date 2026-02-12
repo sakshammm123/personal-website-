@@ -54,7 +54,7 @@ export async function GET(request: NextRequest) {
   }
 }
 
-// POST - Create version or check duplicate
+// POST - Create version, check duplicate, or create chunk
 export async function POST(request: NextRequest) {
   try {
     const session = await auth();
@@ -63,7 +63,7 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    const { action, description, question } = body;
+    const { action, description, question, chunk } = body;
 
     if (action === 'create-version') {
       const version = await createVersion(description, session.user.name || 'admin');
@@ -73,6 +73,33 @@ export async function POST(request: NextRequest) {
     if (action === 'check-duplicate' && question) {
       const duplicate = await checkDuplicateQuestion(question);
       return NextResponse.json({ duplicate });
+    }
+
+    if (action === 'create-chunk' && chunk) {
+      // Create version before adding
+      await createVersion(`Create chunk: ${chunk.title || chunk.id}`, session.user.name || 'admin');
+
+      // Load existing chunks
+      const chunksData = await fs.readFile(CHUNKS_FILE, 'utf8');
+      const chunks = JSON.parse(chunksData);
+
+      // Generate ID if not provided
+      const chunkId = chunk.id || `chunk_${Date.now()}_${Math.random().toString(36).substr(2, 9)}`;
+      
+      // Create new chunk
+      const newChunk = {
+        id: chunkId,
+        title: chunk.title || 'Untitled',
+        content: chunk.content || '',
+        tags: chunk.tags || [],
+        source: chunk.source || 'manual',
+        competencies: chunk.competencies || [],
+      };
+
+      chunks.push(newChunk);
+      await fs.writeFile(CHUNKS_FILE, JSON.stringify(chunks, null, 2), 'utf8');
+
+      return NextResponse.json({ success: true, chunk: newChunk });
     }
 
     return NextResponse.json(
