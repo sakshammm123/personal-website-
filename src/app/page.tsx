@@ -71,7 +71,7 @@ export default function HomePage() {
                 View Education
               </Link>
               <a
-                href="/Saksham%20Mahajan%20Resume.pdf"
+                href="/Saksham%20Mahajan%20Resume_26.pdf"
                 download
                 className="inline-flex items-center justify-center gap-2 min-h-[48px] min-w-[180px] px-8 py-3.5 rounded-md bg-brown-700 text-cream-50 font-semibold text-sm md:text-base transition-all duration-300 hover:bg-brown-800 hover:shadow-lg hover:shadow-brown-900/20 hover:scale-105 active:scale-95"
               >
